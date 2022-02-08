@@ -15,7 +15,7 @@
 } */
 
 //Imprimir todas as tabuadas do número 1 ao 10 
-function imprimirTabuada(n){
+/* function imprimirTabuada(n){
    for (var i=1;i<=10; i++)  {
     var linha = n+"*"+i+"="+n*i;
     console.log(linha); 
@@ -24,4 +24,5 @@ function imprimirTabuada(n){
 for (var i=1; i<=10;i++) {
     imprimirTabuada(i)
     console.log("");
-}
+} */
+
