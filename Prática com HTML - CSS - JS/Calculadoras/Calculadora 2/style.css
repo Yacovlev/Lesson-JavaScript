@@ -8,6 +8,7 @@
     color: white;
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 .calculadora{
     position: absolute;
@@ -30,4 +31,15 @@
 }
 .botao:hover{
     background-color: rgb(51, 43, 43);    
+}
+#resultado{
+    background-color: rgb(138, 118, 93);
+    width: 203px;
+    height: 40px;
+    margin: 5px;
+    font-size: 35px;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    text-align: right;
+    padding: 5px;
 }
