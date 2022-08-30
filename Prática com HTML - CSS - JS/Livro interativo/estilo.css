@@ -9,12 +9,12 @@ div.container{
 }
 
 .container{
-    position:relative;
+    position: relative;
     background-color: #0aa76bef;
     height: 20px;
     padding-top: 10px;    
-    margin: 150px;
-    text-align: left;   
+    margin: 15px;
+    text-align: left;    
 }
 .logo{
 color: aliceblue;
