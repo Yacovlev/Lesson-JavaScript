@@ -1,4 +1,6 @@
+
 body {margin:0;
+    
 background-color: antiquewhite;
 }
 
@@ -17,6 +19,7 @@ ul {
 
 li {
     float: left;
+    
 }
 
 li a {
@@ -40,15 +43,29 @@ nav{
     float:right;
     background-color: rgb(128, 197, 174);
     width: 400px;
-    height: 100%;
-    overflow: auto;
-    flex-direction: column;
-  
+    height: 100vh;
+    overflow: auto;  
+    font-family: Arial;
+    font-size: 20px;    
 }
 div{
     margin-top: 80px;
-    
+}
+.title{
+    font-size: larger;
+    font-weight: bolder;    
     
 }
+.textmargin{
+padding-right: 30px;
+}
+
+main{
+    margin-left: 150px;
+    margin-top: 200px;
+}
+
+    
+
 
 

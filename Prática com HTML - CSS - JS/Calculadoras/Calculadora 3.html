@@ -1,0 +1,49 @@
+<body>
+    <h1> Minha Calculadora v1.0</h1>
+    
+    <label> Insira o 1º valor: </label>
+    <input type="text" id="v1"> <br/> <br/>
+    <label> Insira o 2º valor: </label>
+    <input type="text" id="v2"> <br/> <br/>
+    
+    <label> Operadores:</label> <br/>
+    <input type="button" value="+" onClick="soma()">
+    <input type="button" value="-" onClick="subtracao()">
+    <input type="button" value="*" onClick="multiplicacao()">
+    <input type="button" value="/" onClick="divisao()">
+    
+    <br/>
+    
+    <p>Resultado: </p> 
+    <p id="result"></p>
+    
+    <script>
+        function soma(){
+  var vl1 = document.getElementById("v1").value;
+  var vl2 = document.getElementById("v2").value;
+  var res = parseInt(vl1) + parseInt(vl2);
+  document.getElementById("result").innerHTML = res;  
+}
+
+function subtracao(){
+  var vl1 = document.getElementById("v1").value;
+  var vl2 = document.getElementById("v2").value;
+  var res = parseInt(vl1) - parseInt(vl2);
+  document.getElementById("result").innerHTML = res;  
+}
+
+function multiplicacao(){
+  var vl1 = document.getElementById("v1").value;
+  var vl2 = document.getElementById("v2").value;
+  var res = parseInt(vl1) * parseInt(vl2);
+  document.getElementById("result").innerHTML = res;  
+}
+function divisao(){
+  var vl1 = document.getElementById("v1").value;
+  var vl2 = document.getElementById("v2").value;
+  var res = parseInt(vl1) / parseInt(vl2);
+  document.getElementById("result").innerHTML = res;  
+}
+    </script>
+
+  </body>  
