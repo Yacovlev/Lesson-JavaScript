@@ -8,9 +8,26 @@
     <script src="../vue.js"></script>
 </head>
 <body>
-    <div>
-        
+    <div id="root">
+        <p>{{nome}}</p>
+        <input v-model="nome"> 
+        <div v-if="visivel">
+            <h4>Div1</h4>
+        </div>
+        <div v-else>
+            <h4>Div2</h4>
+        </div>       
     </div>
     
+    
+    <script>
+        let root = new Vue({
+            el: "#root",
+            data: {
+                nome: "Josué Negreiros",
+                visivel: true
+            }
+        });
+    </script>
 </body>
 </html>
