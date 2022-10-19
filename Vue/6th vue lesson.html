@@ -11,12 +11,12 @@
     <div id="root">
         <input v-model="novaFruta">
         <button v-on:click="inserirFruta">Inserir</button>
-        
-        <p>Lista de frutas:</p>
+        <p><b>Lista de frutas:</b></p>
+
         <ul>
             <li v-for="fruta in frutas">{{fruta}}</li>
         </ul>
-        <p> Total: <b>{{totalFrutos}}</b></p>
+        <p><b>Total: {{totalFrutos}}</b></p>
     </div>
     <script>
         let root = new Vue({
@@ -33,8 +33,10 @@
                     this.totalFrutos = this.frutas.length
                 }
             }
-
+            
         });
     </script>
+
+    
 </body>
 </html>
