@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+    <div id="root">
+        <h3> O país selecionado é {{pais}}</h3>
+        <img :src="imagem"> <!--v-bind pode ser reduzido a apenas aos dois pontos--> 
+
+        <div>
+            <button @click="mostrarBrasil">Brasil</button> <!--v-on pode ser reduzido a apenas um @-->
+            <button v-on:click="mostrarPortugal">Portugal</button>
+        </div>
+
+    </div>
+    <script>
+        let root = new Vue({
+            el: '#root',
+            data: {
+                pais: '',
+                imagem: ''
+            },
+            methods:{
+            mostrarBrasil: function(){
+                this.pais = 'Brasil'
+                this.imagem = 'img/Brazil.png'
+            },
+            mostrarPortugal: function(){
+                this.pais = 'Portugal'
+                this.imagem ='img/Portugal.png'
+            }
+        }
+        })
+        root.mostrarBrasil();
+    </script>
+</body>
+</html>
