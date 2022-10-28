@@ -10,28 +10,69 @@
 </head>
 <body>
     <div>
+        <div class="form-header">
+            <div class="title">
+                <h1>Cadastre-se</h1>
+            </div>            
+        </div>  
 
-        <div class="form-image">
-            <a href="https://futurepublishersgroup.com" target="_blank">
-            <img src="img/logo_FuturePublishersGroup_07.jpg" alt="">
-            </a>
-        </div>
         <form action="https://api.staticforms.xyz/submit" method="post">
             <input type="hidden" name="accessKey" value="e9960897-e015-4ccf-846d-fb03328cde29">
-
-            <div class="form-header">
-                <div class="title">
-                        <h1>Cadastre-se</h1>
-                </div>
-
-                <div class="login-button">
-                    <button><a href="#">submeter</a></button>
-                </div>
-
+                      
                 
+                    <label for="firstname">Primeiro Nome</label>
+                    <input id="firstname" type="text" name="name" placeholder="Digite seu primeiro nome"
+                        required> <br><br>
+
+                    <label for="lastname">Sobrenome</label>
+                    <input id="lastname" type="text" name="name" placeholder="Digite seu sobrenome" required> <br><br>
+                
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required> <br><br>
+                
+                    <label for="number">Celular</label>
+                    <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required> <br><br>
+
+                    <label for="test">Endereço completo institucional</label>
+                    <input  id="Endereço" type="tel" name="test" placeholder="Ex:universidade federal do paraná " required> <br><br>
+                
+                    <label for="test">Instituição de atuação atual</label>
+                    <input id="Endereço" type="tel" name="test" placeholder="Ex:universidade federal do paraná " required> <br><br>
+                
+                
+                    <label for="Observação">Observação</label>
+                    <br>
+                    <textarea class="input-box1" name="Observação" id="Observação" cols="50" rows="10" placeholder="Observação"></textarea>
+                
+
+            <div class="inline">
+                <form action="#">
+                    <label for="Formação acadêmica mais alta">Formação acadêmica mais alta</label>
+                    <select name="Formação acadêmica mais alta" id="Formação acadêmica mais alta" required>
+                        <option value="1">Ensino fundamental</option>
+                        <option value="2">Ensino Médio</option>
+                        <option value="3">Graduação</option>
+                        <option value="4">Bacharelado</option>
+                        <option value="5">Licenciatura</option>
+                        <option value="6">Mestrado</option>
+                        <option value="7">Doutorado</option>
+                        <option value="8">Pós-Doutorado</option>
+                    </select>
+                
+                    <form action="#">
+                        <label for="andamento">, situação da formação</label>
+                        <select name="andamento" id="andamento" required>
+                            <option value="incompleto">incompleto</option>
+                            <option value="completo">completo</option>
+                        </select>
+                    </form>
             </div>
-            
+
+            <button><a href="#">Submeter</a></button>
+
+            </div>
         </form>
+       
     </div>
 </body>
 </html>
