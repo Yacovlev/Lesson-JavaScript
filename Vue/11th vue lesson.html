@@ -9,18 +9,40 @@
 </head>
 <body>
     <div id="root">
+        <input v-model="novoNome">
+        <div>
+            <button @click="adicionar">Adicionar</button>
+        </div>
+        <hr>
+        <ul>
+            <li v-for="nome in nomes">{{nome | capitalizar}}</li>
+        </ul>
 
-
+        <hr>
+        <ul>
+            <li v-for="nome in nomes">{{nome}}</li>
+        </ul>
     </div>
+    
 
     <script>
         let root = new Vue({
             el: '#root',
             data: {
+                novoNome: '',
+                nomes: []
+            },
+            methods:{
+                adicionar: function(){
+                    this.nomes.push(this.novoNome)
+                    this.novoNome = ''
+                }                
 
             },
-            methods: {
-                
+            filters: {
+               capitalizar: function(value){
+                return value.toUpperCase()      
+            }
             }
         });
     </script>
