@@ -21,9 +21,13 @@
             <input v-model="telefone">
         </div>
 
-        <p>Nome:</p>
-        <p>E-mail:</p>
-        <p>Telefone:</p>
+        <div>
+            <button @click="pronto">Pronto</button>
+        </div>
+
+        <p>Nome: {{nome}}</p>
+        <p>E-mail: {{sobrenome}}</p>
+        <p>Telefone: {{telefone}}</p>
 
     </div>
 
@@ -34,7 +38,13 @@
            nome: '',
            email: '',
            telefone: ''
-  }
+        },
+        methods:{
+            pronto: function(){
+                
+            }
+
+        }
 });
     </script>
     
