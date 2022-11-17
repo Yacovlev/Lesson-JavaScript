@@ -1,52 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="vue.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div id="root">
+      <div>
+        <label for="">Nome Completo</label>
+        <input v-model="nome" />
 
-        <div>
-            <label for="">Nome Completo</label>
-            <input v-model="nome">
+        <label for="">E-mail</label>
+        <input v-model="email" />
 
-            <label for="">E-mail</label>
-            <input v-model="email">
+        <label for="">Telefone</label>
+        <input v-model="telefone" />
+      </div>
 
-            <label for="">Telefone</label>
-            <input v-model="telefone">
-        </div>
+      <div>
+        <button @click="pronto">Pronto</button>
+      </div>
 
-        <div>
-            <button @click="pronto">Pronto</button>
-        </div>
-
-        <p>Nome: {{nome}}</p>
-        <p>E-mail: {{sobrenome}}</p>
-        <p>Telefone: {{telefone}}</p>
-
+      <p>Nome: {{nome}}</p>
+      <p>E-mail: {{sobrenome}}</p>
+      <p>Telefone: {{telefone}}</p>
     </div>
 
     <script>
-        let root = new Vue({
-         el: '#root',
-         data: {
-           nome: '',
-           email: '',
-           telefone: ''
+      let root = new Vue({
+        el: "#root",
+        data: {
+          nome: "",
+          email: "",
+          telefone: "",
         },
-        methods:{
-            pronto: function(){
-                
-            }
-
-        }
-});
+        methods: {
+          pronto: function () {},
+        },
+      });
     </script>
-    
-</body>
+  </body>
 </html>

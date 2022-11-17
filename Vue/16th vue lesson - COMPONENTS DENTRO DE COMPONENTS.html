@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="vue.js"></script>
+  </head>
+  <body>
+    <div id="root">
+
+        <pai></pai>
+
+    </div>
+    <script>
+
+        Vue.component('pai', {
+            template: `
+            <div>
+              <p>Este é um simples texto</p>  
+              <filho></filho>
+              </filho>
+            </div>
+            `
+        })
+        Vue.component('filho', {
+          template:`
+          <div>Este é o componente filho</div>
+          `
+        })        
+
+        let root = new Vue({
+            el: "#root",
+            component: [
+                'pai'
+            ]
+        });
+    </script>
+  </body>
+</html>
